@@ -1,12 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-export default function Login() {
+function Splash() {
   return (
     <View>
-      <Text>Login</Text>
+      <Text>Hello From Splash Screen</Text>
     </View>
   );
 }
 
+export default Splash;
 const styles = StyleSheet.create({});

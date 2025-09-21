@@ -1,12 +1,12 @@
+import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
-import { StyleSheet } from 'react-native';
 
-function intro1() {}
+export default function intro1() {
+  return (
+    <View>
+      <Text>intro1</Text>
+    </View>
+  );
+}
 
-export default intro1;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
+const styles = StyleSheet.create({});
