@@ -11,6 +11,7 @@ export { default as Intro3 } from './onBoarding/intro1.tsx';
 export { default as ConnectFriend } from './transferFiles/ConnectFriend.tsx';
 export { default as RecieveFile } from './transferFiles/RecieveFile.tsx';
 export { default as TransferFile } from './transferFiles/TransferFile.tsx';
+export { default as TransferHome } from './transferFiles/TransferHome.tsx';
 
 // other screens imports
 export { default as Home } from './Home.tsx';
