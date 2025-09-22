@@ -1,10 +1,4 @@
-import {
-  StatusBar,
-  StyleSheet,
-  useColorScheme,
-  View,
-  Text,
-} from 'react-native';
+import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AppNavigation from './Src/Navigation/AppNavigation.jsx';
 import { Spacing } from './Src/Theme/index.js';
@@ -23,7 +17,7 @@ function App() {
 function AppContent() {
   return (
     <>
-      <View style={styles.container}>
+      <View style={styles.appContainer}>
         <AppNavigation />
       </View>
     </>
@@ -35,6 +29,8 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  appContainer: {
     padding: Spacing.xs,
   },
 });

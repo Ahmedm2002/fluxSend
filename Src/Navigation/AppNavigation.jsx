@@ -24,7 +24,7 @@ function AppNavigation() {
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="SplashScreen"
-          screenOptions={{ headerShown: true }}
+          screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name="SplashScreen" component={SplashScreen} />
 

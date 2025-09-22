@@ -1,0 +1,69 @@
+{
+  "appName": "FluxSend",
+  "theme": {
+    "style": "Modern Minimalist",
+    "keywords": ["fast", "secure", "reliable", "clean", "professional"],
+    "colorPalette": {
+      "primary": "#2563EB",
+      "secondary": "#10B981",
+      "background": "#F9FAFB",
+      "textPrimary": "#111827",
+      "textSecondary": "#6B7280"
+    },
+    "font": "Inter, sans-serif",
+    "iconStyle": "flat, outlined, simple"
+  },
+  "screens": [
+    {
+      "name": "SplashScreen",
+      "description": "Minimal logo animation with app name and tagline 'Fast • Secure • Reliable'."
+    },
+    {
+      "name": "Onboarding",
+      "description": "3-slide carousel explaining: (1) Fast transfers, (2) Secure encryption, (3) Peer-to-peer sharing. Modern illustrations and 'Get Started' button."
+    },
+    {
+      "name": "LoginScreen",
+      "description": "Options for Sign in with Email, Google, Apple. Clean design with one primary button."
+    },
+    {
+      "name": "HomeScreen",
+      "description": "Simple dashboard with two main actions: 'Send File' and 'Receive File'. Show recent transfers list with status (Completed, Pending)."
+    },
+    {
+      "name": "SendFileScreen",
+      "description": "File picker with drag-and-drop area. Shows selected file name, size, and compression toggle (on/off). Progress bar for sending."
+    },
+    {
+      "name": "ReceiveFileScreen",
+      "description": "Enter sender’s code/email to connect. Once connected, show file details (name, size) and progress bar for receiving."
+    },
+    {
+      "name": "TransferProgressScreen",
+      "description": "Large progress circle showing % complete, speed (MB/s), time remaining. Display 'encrypted & secure' badge."
+    },
+    {
+      "name": "TransferSuccessScreen",
+      "description": "Confetti animation with message 'Transfer Complete!'. Buttons: 'Open File', 'Share Again', 'Go Home'."
+    },
+    {
+      "name": "ProfileScreen",
+      "description": "Shows user profile, email, settings for chunk size, encryption toggle, app theme (light/dark mode)."
+    },
+    {
+      "name": "SettingsScreen",
+      "description": "Advanced options: Change chunk size, toggle compression, clear cache, security preferences."
+    }
+  ],
+  "uiElements": {
+    "buttons": "Rounded corners, primary solid fill for actions, secondary outline for cancel.",
+    "inputs": "Minimal with clear labels and placeholders.",
+    "progressBars": "Animated, smooth, gradient style.",
+    "cards": "Soft shadows, rounded, minimal icons."
+  },
+  "extraFeatures": [
+    "Dark Mode toggle",
+    "QR Code option for quick connect between sender and receiver",
+    "Encryption badge displayed during transfer"
+  ]
+}

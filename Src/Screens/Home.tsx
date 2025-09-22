@@ -2,7 +2,6 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { Dimensions, AppColors, Spacing } from '../Theme/index.js';
 export default function Home() {
-  console.log('AppColors: ', AppColors);
   return (
     <View>
       <Text>Home</Text>
