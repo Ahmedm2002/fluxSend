@@ -1,6 +1,12 @@
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import {
+  StatusBar,
+  StyleSheet,
+  useColorScheme,
+  View,
+  Text,
+} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import AppNavigation from './Src/Navigation/AppNavigation';
+import AppNavigation from './Src/Navigation/AppNavigation.jsx';
 import { Spacing } from './Src/Theme/index.js';
 
 function App() {

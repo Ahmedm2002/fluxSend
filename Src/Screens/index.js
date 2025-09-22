@@ -17,4 +17,4 @@ export { default as TransferHome } from './transferFiles/TransferHome.tsx';
 export { default as Home } from './Home.tsx';
 export { default as Profile } from './Profile.tsx';
 export { default as Settings } from './Settings.tsx';
-export { default as Splash } from './Splash.tsx';
+export { default as SplashScreen } from './SplashScreen.tsx';

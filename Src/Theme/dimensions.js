@@ -1,15 +1,11 @@
-import { useWindowDimensions } from 'react-native';
-
-const { height, width } = useWindowDimensions();
+import { Dimensions } from 'react-native';
+let { width, height } = Dimensions.get('window');
 
 const dimensions = {
-  screenWidth: width,
-  screenHeight: height,
-  halfWidth: width / 2,
-  halfHeight: height / 2,
-  quarterWidth: width / 4,
-  quarterHeight: height / 4,
-  isSmallDevice: width < 360,
+  screenWidth: width.toFixed(0),
+  screenHeight: height.toFixed(0),
+  halfWidth: (width / 2).toFixed(0),
+  halfHeight: (height / 2).toFixed(0),
 };
 
 export default dimensions;
