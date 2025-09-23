@@ -3,7 +3,7 @@ import React from 'react';
 import { Dimensions, AppColors, Spacing } from '../Theme/index.js';
 export default function Home() {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <Text>Home</Text>
       <Text>Width: {Dimensions.screenWidth}</Text>
       <Text>Height: {Dimensions.screenHeight}</Text>

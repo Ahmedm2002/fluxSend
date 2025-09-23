@@ -12,6 +12,7 @@ import {
   Profile,
   Settings,
   SplashScreen,
+  BottomTabs,
 } from '../Screens/index.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -42,6 +43,7 @@ function AppNavigation() {
           <Stack.Screen name="TransferFile" component={TransferFile} />
           <Stack.Screen name="ConnectFriend" component={ConnectFriend} />
           <Stack.Screen name="RecieveFile" component={RecieveFile} />
+          <Stack.Screen name="Main" component={BottomTabs} />
         </Stack.Navigator>
       </NavigationContainer>
     </>

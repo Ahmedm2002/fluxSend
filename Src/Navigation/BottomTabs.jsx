@@ -1,12 +1,13 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Home, TransferHome, Profile } from '../Screens/index.js';
 
 const Tabs = createBottomTabNavigator();
 const BottomTabs = () => {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
+      <Text>Bottom Tabs</Text>
       <Tabs.Navigator>
         <Tabs.Screen
           name="Home"

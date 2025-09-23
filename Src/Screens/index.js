@@ -18,3 +18,5 @@ export { default as Home } from './Home.tsx';
 export { default as Profile } from './Profile.tsx';
 export { default as Settings } from './Settings.tsx';
 export { default as SplashScreen } from './SplashScreen.tsx';
+
+export { default as BottomTabs } from '../Navigation/BottomTabs.jsx';

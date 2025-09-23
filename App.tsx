@@ -7,30 +7,20 @@ function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
-    </SafeAreaView>
-  );
-}
-
-function AppContent() {
-  return (
-    <>
       <View style={styles.appContainer}>
         <AppNavigation />
       </View>
-    </>
+    </SafeAreaView>
   );
 }
 
 export default App;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   appContainer: {
-    padding: Spacing.xs,
+    flex: 1,
+    margin: Spacing.xs,
   },
 });
