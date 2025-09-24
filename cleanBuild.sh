@@ -8,4 +8,4 @@ cd ..
 
 echo "Starting Server"
 
-npm start 
+npm start --resetCache.

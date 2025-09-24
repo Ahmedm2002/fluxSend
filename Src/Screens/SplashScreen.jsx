@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { uStyles, AppColors, Spacing } from '../Theme/index.js';
 
 export default function SplashScreen() {
-  const navigation = useNavigation<any>();
+  const navigation = useNavigation();
 
   useEffect(() => {
     console.log('UseEffect Triggered');

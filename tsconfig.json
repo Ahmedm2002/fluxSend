@@ -10,6 +10,6 @@
     "Src/Theme/typography.js",
     "Src/Navigation/AppNavigation.jsx",
     "Src/Navigation/BottomTabs.jsx"
-  ],
+, "Src/Screens/SplashScreen.jsx"  ],
   "exclude": ["**/node_modules", "**/Pods"]
 }
