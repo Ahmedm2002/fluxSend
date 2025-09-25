@@ -68,7 +68,6 @@ const styles = StyleSheet.create({
   bottomTabs: {
     flex: 1,
     height: Typography.size['2xl'],
-    backgroundColor: 'yellow',
   },
 });
 

@@ -2,18 +2,17 @@ import React from 'react';
 import { Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { AppColors, Typography } from '../../Theme';
 
-interface CButtonProps {
+interface CBtnProps {
   title: string;
   onPress: () => void;
   variant?: 'primary' | 'secondary';
 }
 
-const CButton: React.FC<CButtonProps> = ({
+const CButton: React.FC<CBtnProps> = ({
   title,
   onPress,
   variant = 'primary',
 }) => {
-  console.log('title', title);
   return (
     <TouchableOpacity
       style={[
@@ -29,7 +28,7 @@ const CButton: React.FC<CButtonProps> = ({
           variant === 'primary' ? styles.textPrimary : styles.textSecondary,
         ]}
       >
-        {title.toString()}
+        {title}
       </Text>
     </TouchableOpacity>
   );
@@ -39,26 +38,30 @@ export default CButton;
 
 const styles = StyleSheet.create({
   base: {
-    paddingVertical: 14,
-    paddingHorizontal: 24,
-    borderRadius: 12,
+    paddingVertical: Typography.lineHeights.xs,
+    paddingHorizontal: Typography.lineHeights.xs,
+    borderRadius: Typography.size.xs,
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
-    marginHorizontal: 5,
+    marginHorizontal: Typography.lineHeights['2xs'],
+    marginVertical: Typography.lineHeights.xs,
   },
+
   primary: {
     backgroundColor: AppColors.primary,
   },
+
   secondary: {
-    backgroundColor: AppColors.secondary,
+    backgroundColor: AppColors.primaryLight,
   },
+
   text: {
     fontSize: Typography.size.md,
     fontWeight: Typography.fontWeights.medium as any,
   },
   textPrimary: {
-    color: AppColors.primary,
+    color: AppColors.white,
   },
   textSecondary: {
     color: AppColors.primary,

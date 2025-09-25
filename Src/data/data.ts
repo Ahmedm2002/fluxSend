@@ -1,0 +1,88 @@
+const dummyTransfers = [
+  {
+    id: '1',
+    name: 'Document.pdf',
+    size: '20 MB',
+    status: 'Completed',
+    type: 'doc',
+  },
+  {
+    id: '2',
+    name: 'Image.jpg',
+    size: '15 MB',
+    status: 'Completed',
+    type: 'image',
+  },
+  {
+    id: '4',
+    name: 'Video.mp4',
+    size: '50 MB',
+    status: 'Pending',
+    type: 'video',
+  },
+  {
+    id: '5',
+    name: 'Document.pdf',
+    size: '20 MB',
+    status: 'Completed',
+    type: 'doc',
+  },
+  {
+    id: '6',
+    name: 'Image.jpg',
+    size: '15 MB',
+    status: 'Completed',
+    type: 'image',
+  },
+  {
+    id: '7',
+    name: 'Video.mp4',
+    size: '50 MB',
+    status: 'Pending',
+    type: 'video',
+  },
+  {
+    id: '8',
+    name: 'Document.pdf',
+    size: '20 MB',
+    status: 'Completed',
+    type: 'doc',
+  },
+  {
+    id: '9',
+    name: 'Image.jpg',
+    size: '15 MB',
+    status: 'Completed',
+    type: 'image',
+  },
+  {
+    id: '10',
+    name: 'Video.mp4',
+    size: '50 MB',
+    status: 'Pending',
+    type: 'video',
+  },
+  {
+    id: '11',
+    name: 'Document.pdf',
+    size: '20 MB',
+    status: 'Completed',
+    type: 'doc',
+  },
+  {
+    id: '12',
+    name: 'Image.jpg',
+    size: '15 MB',
+    status: 'Completed',
+    type: 'image',
+  },
+  {
+    id: '13',
+    name: 'Video.mp4',
+    size: '50 MB',
+    status: 'Pending',
+    type: 'video',
+  },
+];
+
+export default dummyTransfers;

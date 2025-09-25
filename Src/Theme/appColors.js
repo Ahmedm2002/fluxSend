@@ -1,7 +1,10 @@
-export default AppColors = {
+const AppColors = {
   primary: '#2563EB',
-  secondary: '#10B981',
+  primaryLight: '#DBEAFE',
   background: '#F9FAFB',
   textPrimary: '#111827',
   textSecondary: '#6B7280',
+  white: '#FFFFFF',
 };
+
+export default AppColors;
