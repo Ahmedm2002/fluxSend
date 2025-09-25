@@ -4,7 +4,10 @@ import { Spacing, Typography, AppColors } from '../Theme/index.js';
 import ICONS from '../Assets/images/icons/index.js';
 import { CButton } from '../Components/shared/index.js';
 import dummyTransfers from '../data/data.ts';
+import { useNavigation } from '@react-navigation/native';
+
 export default function Home() {
+  const navigation = useNavigation<any>();
   const renderItem = ({ item }: any) => (
     <View style={styles.transferItem}>
       <View style={styles.iconWrapper}>
@@ -45,14 +48,14 @@ export default function Home() {
           title="Send File"
           variant="primary"
           onPress={() => {
-            console.log('Send Touched');
+            navigation.navigate('TransferFile');
           }}
         />
         <CButton
           title="Recieve File"
           variant="secondary"
           onPress={() => {
-            console.log('Recieved Touched');
+            navigation.navigate('RecieveFile');
           }}
         />
       </View>
@@ -93,7 +96,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontWeight: Typography.fontWeights.bold,
     textAlign: 'center',
-    marginVertical: Typography.lineHeights.xs,
+    marginBottom: Typography.lineHeights.xs,
   },
   transferItem: {
     flexDirection: 'row',
@@ -110,7 +113,6 @@ const styles = StyleSheet.create({
   iconWrapper: {
     width: 40,
     height: 40,
-    backgroundColor: AppColors?.secondary,
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
@@ -135,9 +137,9 @@ const styles = StyleSheet.create({
     fontWeight: Typography.fontWeights.medium as any,
   },
   completed: {
-    color: AppColors?.success || '#10B981', // fallback if not defined
+    color: AppColors?.success,
   },
   pending: {
-    color: AppColors?.warning || '#F59E0B',
+    color: AppColors?.warning,
   },
 });

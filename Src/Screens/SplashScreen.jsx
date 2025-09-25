@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React, { useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { uStyles, AppColors, Spacing } from '../Theme/index.js';
+import { AppColors, Spacing } from '../Theme/index.js';
 
 export default function SplashScreen() {
   const navigation = useNavigation();
