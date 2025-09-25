@@ -7,9 +7,10 @@
     "Src/Theme/index.js",
     "Src/Theme/colors.js",
     "Src/Theme/appColors.js",
-    "Src/Theme/typography.js",
+    "Src/Theme/typography.ts",
     "Src/Navigation/AppNavigation.jsx",
-    "Src/Navigation/BottomTabs.jsx"
-, "Src/Screens/SplashScreen.jsx"  ],
+    "Src/Navigation/BottomTabs.jsx",
+    "Src/Screens/SplashScreen.jsx"
+  ],
   "exclude": ["**/node_modules", "**/Pods"]
 }

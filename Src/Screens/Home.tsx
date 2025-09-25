@@ -1,52 +1,39 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import React from 'react';
-import { Dimensions, AppColors, Spacing } from '../Theme/index.js';
+import { Spacing, Typography } from '../Theme/index.js';
+import ICONS from '../Assets/images/icons/index.js';
+import { CButton } from '../Components/shared/index.js';
 export default function Home() {
   return (
     <View style={{ flex: 1 }}>
-      <Text>Home</Text>
-      <Text>Width: {Dimensions.screenWidth}</Text>
-      <Text>Height: {Dimensions.screenHeight}</Text>
-      <Text
-        style={{
-          backgroundColor: AppColors.primary,
-          padding: Spacing.sm,
-          margin: Spacing.md,
-        }}
-      >
-        Primary: {AppColors.primary}
-      </Text>
-      <Text
-        style={{
-          backgroundColor: AppColors.secondary,
-          padding: Spacing.sm,
-          margin: Spacing.md,
-        }}
-      >
-        Secondary: {AppColors.secondary}
-      </Text>
-
-      <Text
-        style={{
-          color: AppColors.textPrimary,
-          padding: Spacing.sm,
-          margin: Spacing.md,
-        }}
-      >
-        Text Primary : {AppColors.textPrimary}
-      </Text>
-
-      <Text
-        style={{
-          color: AppColors.textSecondary,
-          padding: Spacing.sm,
-          margin: Spacing.md,
-        }}
-      >
-        Text Secondary: {AppColors.textSecondary}
-      </Text>
+      <View style={styles.topBar}>
+        <Text style={styles.title}>Flux Send</Text>
+        <Image source={ICONS.SETTINGS} style={styles.settingsIcon} />
+      </View>
+      <View>
+        <CButton title="Send File" variant="primary" onPress={() => {}} />
+      </View>
     </View>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  topBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: Typography.lineHeights['2xs'],
+  },
+  title: {
+    fontSize: Typography.size.xl,
+    fontWeight: Typography.fontWeights.bold,
+    textAlign: 'center',
+    flex: 1,
+  },
+  settingsIcon: {
+    position: 'absolute',
+    right: Spacing.md,
+    width: Typography.size.xl,
+    height: Typography.size.xl,
+  },
+});

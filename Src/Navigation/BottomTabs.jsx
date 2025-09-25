@@ -1,16 +1,16 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Home, TransferHome, Profile } from '../Screens/index.js';
 import ICONS from '../Assets/images/icons/index.js';
+import { Typography } from '../Theme/index.js';
 
 const Tabs = createBottomTabNavigator();
 
 const BottomTabs = () => {
   return (
-    <View style={{ flex: 1, height: 40 }}>
-      <Text>Bottom Tabs</Text>
-      <Tabs.Navigator>
+    <View style={{ flex: 1 }}>
+      <Tabs.Navigator style={styles.bottomTabs}>
         <Tabs.Screen
           name="Home"
           component={Home}
@@ -20,8 +20,8 @@ const BottomTabs = () => {
             tabBarIcon: ({ focused }) => (
               <Image
                 source={focused ? ICONS.HOME_FOCUSED : ICONS.HOME_OUTLINE}
-                style={{ width: 20, height: 25 }}
                 resizeMode="contain"
+                style={styles.bottomIcon}
               />
             ),
           }}
@@ -34,9 +34,9 @@ const BottomTabs = () => {
             tabBarActiveTintColor: 'balck',
             tabBarIcon: ({ focused }) => (
               <Image
-                source={focused ? ICONS.HOME_FOCUSED : ICONS.HOME_OUTLINE}
-                style={{ width: 20, height: 25 }}
+                source={focused ? ICONS.SHARE_FOCUSED : ICONS.SHARE_OUTLINE}
                 resizeMode="contain"
+                style={styles.bottomIcon}
               />
             ),
           }}
@@ -50,8 +50,8 @@ const BottomTabs = () => {
             tabBarIcon: ({ focused }) => (
               <Image
                 source={focused ? ICONS.USER_FOCUSED : ICONS.USER_OUTLINE}
-                style={{ width: 20, height: 25 }}
                 resizeMode="contain"
+                style={styles.bottomIcon}
               />
             ),
           }}
@@ -60,5 +60,16 @@ const BottomTabs = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  bottomIcon: {
+    width: Typography.size.xxl,
+  },
+  bottomTabs: {
+    flex: 1,
+    height: Typography.size['2xl'],
+    backgroundColor: 'yellow',
+  },
+});
 
 export default BottomTabs;
