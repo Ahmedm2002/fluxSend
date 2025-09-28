@@ -6,17 +6,21 @@ interface CBtnProps {
   title: string;
   onPress: () => void;
   variant?: 'primary' | 'secondary';
+  additionalStyles?: any | '';
 }
 
 const CButton: React.FC<CBtnProps> = ({
   title,
   onPress,
   variant = 'primary',
+  additionalStyles,
 }) => {
   return (
     <TouchableOpacity
       style={[
-        styles.base,
+        { ...additionalStyles, ...styles.base },
+        // ...additionalStyles,
+        // styles.base,
         variant === 'primary' ? styles.primary : styles.secondary,
       ]}
       activeOpacity={0.8}

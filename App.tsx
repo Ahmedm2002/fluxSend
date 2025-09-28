@@ -21,6 +21,6 @@ export default App;
 const styles = StyleSheet.create({
   appContainer: {
     flex: 1,
-    margin: Spacing.xs,
+    margin: Spacing.sm,
   },
 });
